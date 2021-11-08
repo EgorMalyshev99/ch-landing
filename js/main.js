@@ -37,4 +37,13 @@ $(document).ready(function() {
     }, 350);
     return false;
   });
+
+  // Тень хэдера
+  window.addEventListener('scroll', () => {
+    if (window.scrollY) {
+      header.classList.add('active');
+    } else {
+      header.classList.remove('active');
+    }
+  });
 });

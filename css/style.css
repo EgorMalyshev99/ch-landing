@@ -249,6 +249,14 @@ input[type="radio"].visually-hidden {
   background-image: url(../img/svg/logo-white.svg);
 }
 
+.me-6 {
+  margin-right: 4rem !important;
+}
+
+.me-7 {
+  margin-right: 5rem !important;
+}
+
 .phone-icon {
   width: 16px;
   height: 16px;
@@ -325,6 +333,42 @@ input[type="radio"].visually-hidden {
   width: 25px;
   height: 23px;
   background-image: url(../img/svg/percent.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.speed-icon {
+  width: 25px;
+  height: 19px;
+  background-image: url(../img/svg/speed.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.engine-icon {
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/svg/engine.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.time-icon {
+  width: 23px;
+  height: 24px;
+  background-image: url(../img/svg/time.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.gas-icon {
+  width: 21px;
+  height: 23px;
+  background-image: url(../img/svg/gas.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -624,7 +668,7 @@ input[type="radio"].visually-hidden {
 .cars-item__right {
   width: 285px;
   padding: 52px 22px 10px 22px;
-  background-color: var(--white);
+  background-color: rgba(255, 255, 255, 0.9);
   filter: drop-shadow(-7px 7px 10px rgba(0, 69, 149, 0.8));
 }
 
@@ -672,6 +716,7 @@ input[type="radio"].visually-hidden {
   padding: 0 30px;
   color: var(--blue);
   font-weight: 400;
+  font-stretch: condensed;
   background-color: var(--white);
   box-sizing: content-box;
   border: 2px solid transparent;
@@ -770,8 +815,11 @@ input[type="radio"].visually-hidden {
 }
 
 .complictation-costs {
-  padding: 4px 15px;
-  background-color: var(--blue);
+  padding: 4px 28px 4px 15px;
+  background-image: url(../img/costs-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
   display: flex;
   align-items: flex-end;
 }
@@ -785,6 +833,16 @@ input[type="radio"].visually-hidden {
 .credit-cost {
   color: var(--white);
   font-size: 20px;
+}
+
+.complictation-desc-heading {
+  color: #B4B4B4;
+  text-decoration: underline;
+  display: block;
+}
+
+.complictation-desc-value {
+  color: var(--white);
 }
 
 .benefit-banner {

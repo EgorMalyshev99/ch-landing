@@ -50,9 +50,9 @@
     <section class="benefits-section">
       <div class="container py-5">
         <div class="timer">
-          <script src="//megatimer.ru/get/c01c05029000cd3c94d28c0001a0acde.js"></script>
+          <script src="//megatimer.ru/get/505a1885368c2f42e7154eeadbc1f278.js"></script>
         </div>
-        <div class="special-benefits mt-5 pt-5 d-flex flex-column align-items-center">
+        <div class="special-benefits pt-5 d-flex flex-column align-items-center">
           <span class="special-benefits-heading">Успейте получить специальные условия!</span>
           <div class="benefits-list row mb-5">
             <div class="col-md-4 d-flex flex-column align-items-center">
@@ -233,7 +233,7 @@
             </div>
             <div>
               <button class="btn mb-2" type="button" data-bs-toggle="modal" data-bs-target="#creditModal">Рассчитать кредит</button>
-              <button class="btn btn--black mb-4" type="button">Рассчитать авторассрочку</button>
+              <button class="btn btn--black mb-4" type="button" data-bs-toggle="modal" data-bs-target="#installmentModal">Рассчитать авторассрочку</button>
               <button class="btn btn--transparent" type="button">Полное описание</button>
             </div>
           </div>
@@ -283,7 +283,7 @@
             </div>
             <div>
               <button class="btn mb-2" type="button" data-bs-toggle="modal" data-bs-target="#creditModal">Рассчитать кредит</button>
-              <button class="btn btn--black mb-4" type="button">Рассчитать авторассрочку</button>
+              <button class="btn btn--black mb-4" type="button" data-bs-toggle="modal" data-bs-target="#installmentModal">Рассчитать авторассрочку</button>
               <button class="btn btn--transparent" type="button">Полное описание</button>
             </div>
           </div>
@@ -333,7 +333,7 @@
             </div>
             <div>
               <button class="btn mb-2" type="button" data-bs-toggle="modal" data-bs-target="#creditModal">Рассчитать кредит</button>
-              <button class="btn btn--black mb-4" type="button">Рассчитать авторассрочку</button>
+              <button class="btn btn--black mb-4" type="button" data-bs-toggle="modal" data-bs-target="#installmentModal">Рассчитать авторассрочку</button>
               <button class="btn btn--transparent" type="button">Полное описание</button>
             </div>
           </div>
@@ -472,6 +472,32 @@
         <div class="d-flex flex-column align-items-end">
           <div class="d-flex flex-column align-items-start">
             <span class="modal-heading">Кредит 1,9%</span>
+            <form action="" method="post" class="standart-form mt-3">
+              <div class="d-flex flex-column mb-2">
+                <input class="standart-input" type="text" name="neme" placeholder="Ваше имя">
+                <input class="standart-input" type="tel" name="neme" placeholder="Ваш телефон">
+              </div>
+              <button class="btn btn--red" type="submit">Получить предложение</button>
+              <div class="agreement">
+                <label class="agreement__label">Согласие
+                  на обработку <a class="personal-data-ckeck__link">персональных данных</a>
+                  <input class="visually-hidden" type="checkbox" required="" checked=""><span class="checkmark"></span></label>
+              </div>
+            </form>
+          </div>
+        </div>
+        <button type="button" class="modal-close" data-bs-dismiss="modal"></button>
+      </div>
+    </div>
+  </div>
+
+  <!--Рассрочка-->
+  <div class="modal modal-installment fade" id="installmentModal" tabindex="-1" aria-labelledby="installmentModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="d-flex flex-column align-items-end">
+          <div class="d-flex flex-column align-items-start">
+            <span class="modal-heading">Рассчитать<br>авторассрочку</span>
             <form action="" method="post" class="standart-form mt-3">
               <div class="d-flex flex-column mb-2">
                 <input class="standart-input" type="text" name="neme" placeholder="Ваше имя">

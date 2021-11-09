@@ -939,6 +939,12 @@ input[type="radio"].visually-hidden {
   margin-top: 30px;
 }
 
+.complictation-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .complictation-costs {
   padding: 4px 28px 4px 15px;
   background-image: url(../img/costs-bg.png);
@@ -1113,13 +1119,9 @@ input[type="radio"].visually-hidden {
 }
 
 @media screen and (max-width: 1500px) {
-  /* .cars-item__left {
-    width: 71%;
+  .car-img {
+    right: 26%;
   }
-
-  .cars-item__right {
-    width: 28%;
-  } */
 }
 
 @media screen and (max-width: 1400px) {}
@@ -1139,13 +1141,18 @@ input[type="radio"].visually-hidden {
   }
 
   .dropdown {
-    width: 45%;
+    width: 100%;
+    display: flex;
   }
 
   .dropbtn {
     width: 100%;
-    height: 40px;
     padding: 0 15px;
+  }
+
+  .dropdown+.dropdown {
+    margin-left: 0;
+    margin-top: 10px;
   }
 
   .map {
@@ -1254,11 +1261,6 @@ input[type="radio"].visually-hidden {
 
   .select-lists {
     flex-direction: column;
-  }
-
-  .dropdown+.dropdown {
-    margin-left: 0;
-    margin-top: 10px;
   }
 
   .complictations {

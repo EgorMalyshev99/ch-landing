@@ -78,7 +78,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   height: 100%;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 *,
@@ -468,9 +468,9 @@ input[type="radio"].visually-hidden {
   left: 0;
   z-index: 100;
   width: 100%;
-  height: 100px;
+  height: 90px;
   padding: 8px 0;
-  background-color: var(--black);
+  background-color: var(--white);
 }
 
 .shadow-bottom::after {
@@ -720,6 +720,7 @@ input[type="radio"].visually-hidden {
 
 .cars-item {
   height: 372px;
+  padding: 0;
   display: flex;
   justify-content: space-between;
 }
@@ -1159,6 +1160,149 @@ input[type="radio"].visually-hidden {
     height: 35px;
     top: 5px;
     right: 5px;
+  }
+
+  .main-content {
+    margin-top: 90px;
+  }
+
+  .main-banner {
+    height: 511px;
+    padding: 30px 10px 10px 10px;
+    background-image: url(../img/banners/main-banner__mobile.jpg);
+  }
+
+  .main-banner-heading-block {
+    background-image: none;
+    flex-direction: column;
+  }
+
+  .main-banner-heading {
+    position: static;
+    transform: none;
+  }
+
+  .main-banner__btn {
+    position: static;
+    transform: none;
+  }
+
+  .main-banner__btn:active {
+    transform: translateY(4px);
+  }
+
+  .timer {
+    display: none;
+  }
+
+  .benefit-heading {
+    margin-bottom: 10px;
+  }
+
+  .cars {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .cars::before {
+    display: none;
+  }
+
+  .cars::after {
+    display: none;
+  }
+
+  .cars-item {
+    height: unset;
+    flex-direction: column;
+  }
+
+  .cars-item+.cars-item {
+    margin-top: 35px;
+  }
+
+  .cars-item__left {
+    width: 100%;
+    height: 372px;
+    margin-right: 0;
+    padding: 17px 20px;
+    filter: none;
+    flex-grow: 0;
+    justify-content: center;
+  }
+
+  .cars-item__left::before {
+    width: 220%;
+  }
+
+  .car-img {
+    width: 100%;
+    z-index: 2;
+    right: 50%;
+    bottom: -35px;
+    transform: translateX(50%);
+  }
+
+  .cars-item__right {
+    width: 100%;
+    padding: 40px 18% 35px 18%;
+  }
+
+  .special-benefits {
+    border-top: none;
+  }
+
+  .select-lists {
+    flex-direction: column;
+  }
+
+  .dropdown+.dropdown {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .complictations {
+    padding-bottom: 40px;
+  }
+
+  .complictation-costs {
+    flex-direction: column;
+  }
+
+  .benefit-banner {
+    height: 275px;
+  }
+
+  .benefit-banner .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .benefit-banner__content {
+    padding: 20px;
+  }
+
+  .benefit-banner__text {
+    text-align: center;
+  }
+
+  .main-footer {
+    margin-top: 30px;
+  }
+
+  .complictation {
+    flex-direction: column;
+  }
+
+  .feedback {
+    position: static;
+  }
+
+  .modal .modal-content {
+    filter: none;
+    justify-content: center;
   }
 }
 

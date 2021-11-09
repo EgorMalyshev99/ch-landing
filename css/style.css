@@ -2,22 +2,23 @@
 @font-face {
   font-family: "MyriadPro";
   src: local(MyriadPro),
-    url("../fonts/MyriadPro/MyriadPro-Cond.woff") format("woff"),
-    url("../fonts/MyriadPro/MyriadPro-Cond.eot") format('embedded-opentype'),
-    url("../fonts/MyriadPro/MyriadPro-Cond.ttf") format('truetype');
+    url("../fonts/MyriadPro/MyriadPro-Regular.woff") format("woff"),
+    url("../fonts/MyriadPro/MyriadPro-Regular.eot") format('embedded-opentype'),
+    url("../fonts/MyriadPro/MyriadPro-Regular.ttf") format('truetype');
   font-weight: 400;
   font-display: swap;
 }
 
-/* @font-face {
+@font-face {
   font-family: "MyriadPro";
   src: local(MyriadPro),
-    url("../fonts/MyriadPro/MyriadPro-Regular.woff") format("woff"),
-    url("../fonts/MyriadPro/MyriadPro-Regular.eot") format('embedded-opentype'),
-    url("../fonts/MyriadPro/MyriadPro-Regular.ttf") format('truetype');
-  font-weight: normal;
+    url("../fonts/MyriadPro/MyriadPro-Cond.woff") format("woff"),
+    url("../fonts/MyriadPro/MyriadPro-Cond.eot") format('embedded-opentype'),
+    url("../fonts/MyriadPro/MyriadPro-Cond.ttf") format('truetype');
+  font-weight: 400;
+  font-stretch: condensed;
   font-display: swap;
-} */
+}
 
 @font-face {
   font-family: "MyriadPro";
@@ -26,6 +27,28 @@
     url("../fonts/MyriadPro/MyriadPro-Semibold.eot") format('embedded-opentype'),
     url("../fonts/MyriadPro/MyriadPro-Semibold.ttf") format('truetype');
   font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MyriadPro";
+  src: local(MyriadPro),
+    url("../fonts/MyriadPro/MyriadPro-SemiboldCond.woff") format("woff"),
+    url("../fonts/MyriadPro/MyriadPro-SemiboldCond.eot") format('embedded-opentype'),
+    url("../fonts/MyriadPro/MyriadPro-SemiboldCond.ttf") format('truetype');
+  font-weight: 600;
+  font-stretch: condensed;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MyriadPro";
+  src: local(MyriadPro),
+    url("../fonts/MyriadPro/MyriadPro-BoldCond.woff") format("woff"),
+    url("../fonts/MyriadPro/MyriadPro-BoldCond.eot") format('embedded-opentype'),
+    url("../fonts/MyriadPro/MyriadPro-BoldCond.ttf") format('truetype');
+  font-weight: bold;
+  font-stretch: condensed;
   font-display: swap;
 }
 
@@ -74,6 +97,7 @@
   font-family: "MyriadPro", Arial, Helvetica, sans-serif;
   font-size: 18px;
   font-weight: 400;
+  font-stretch: condensed;
   letter-spacing: normal;
   background: radial-gradient(120.08% 50% at 50% 50%, #2C4E76 0%, #041227 100%);
   overflow-x: hidden;
@@ -382,6 +406,8 @@ input[type="radio"].visually-hidden {
   background-color: var(--blue);
   color: var(--white);
   font-size: 18px;
+  font-weight: 400;
+  font-stretch: condensed;
   transition: all .25s ease;
   display: flex;
   justify-content: center;
@@ -440,6 +466,7 @@ input[type="radio"].visually-hidden {
   color: var(--white);
   font-size: 24px;
   font-weight: 600;
+  font-stretch: normal;
   letter-spacing: 3px;
   text-transform: uppercase;
   text-align: center;
@@ -466,6 +493,8 @@ input[type="radio"].visually-hidden {
 .benefit-heading {
   margin-bottom: 20px;
   font-size: 22px;
+  font-weight: 400;
+  font-stretch: normal;
   color: var(--white);
   display: block;
 }
@@ -509,13 +538,21 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
 }
 
+.cars-item+.cars-item {
+  margin-top: 120px;
+}
+
 .cars-item__left {
   position: relative;
   margin-right: 17px;
+  padding: 26px 70px 10px 10px;
   background-repeat: no-repeat;
   background-position-x: left;
   background-size: cover;
+  filter: drop-shadow(-7px 7px 10px rgba(0, 69, 149, 0.8));
   flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .cars-item__left::before {
@@ -529,10 +566,48 @@ input[type="radio"].visually-hidden {
   transform: rotate(180deg)
 }
 
+.car-info {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.car-name {
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  line-height: 35px;
+  display: block;
+}
+
+.car-cost {
+  margin-bottom: 18px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 35px;
+  color: var(--blue);
+  display: block;
+}
+
+.car-description-list {
+  padding-left: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  font-stretch: condensed;
+}
+
+.car-img {
+  position: absolute;
+  bottom: -50px;
+  right: 17%;
+}
+
 .cars-item__right {
   width: 285px;
   padding: 52px 22px 10px 22px;
   background-color: var(--white);
+  filter: drop-shadow(-7px 7px 10px rgba(0, 69, 149, 0.8));
 }
 
 .cars-item__right .btn {
@@ -652,6 +727,31 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 
+.benefit-banner {
+  height: 521px;
+  background-image: url(../img/banners/benefit-banner__desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.benefit-banner__content {
+  padding: 35px 70px 35px 25px;
+  background-color: #00459586;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.benefit-banner__text {
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--white);
+  /* font-weight: 600; */
+  font-stretch: normal;
+}
+
 .modal .modal-dialog {
   max-width: 880px;
 }
@@ -688,6 +788,7 @@ input[type="radio"].visually-hidden {
 /* Footer */
 .main-footer {
   position: relative;
+  margin-top: 120px;
 }
 
 .map {

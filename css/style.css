@@ -957,6 +957,10 @@ input[type="radio"].visually-hidden {
   align-items: center;
 }
 
+.complictation__top--mobile {
+  display: none;
+}
+
 .complictation__bottom {
   margin-top: 8px;
   padding: 20px 25px;
@@ -999,6 +1003,11 @@ input[type="radio"].visually-hidden {
 
 .complictation-desc-value {
   color: var(--white);
+  /* font-stretch: normal; */
+}
+
+.complictation-img {
+  margin-bottom: 5px;
 }
 
 .details {
@@ -1295,7 +1304,7 @@ input[type="radio"].visually-hidden {
     width: 100%;
     z-index: 2;
     right: 50%;
-    bottom: -35px;
+    bottom: -40px;
     transform: translateX(50%);
   }
 
@@ -1348,7 +1357,21 @@ input[type="radio"].visually-hidden {
   }
 
   .complictation__top {
-    flex-direction: column;
+    display: none;
+    /* flex-direction: column; */
+  }
+
+  .complictation__top--mobile {
+    padding: 8px 0;
+    background-color: #88888985;
+    display: block;
+  }
+
+  .complictation-costs {
+    margin-bottom: 12px;
+    padding: 4px 24px 4px 16px;
+    display: inline-flex;
+    flex-direction: row;
   }
 
   .feedback {

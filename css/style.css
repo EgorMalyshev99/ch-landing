@@ -926,7 +926,13 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 
-.complictation {
+.complictation {}
+
+.complictation+.complictation {
+  margin-top: 30px;
+}
+
+.complictation__top {
   padding: 13px 25px 18px 18px;
   background-color: #88888985;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
@@ -935,8 +941,11 @@ input[type="radio"].visually-hidden {
   align-items: center;
 }
 
-.complictation+.complictation {
-  margin-top: 30px;
+.complictation__bottom {
+  margin-top: 8px;
+  padding: 20px 25px;
+  background-color: #88888985;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
 }
 
 .complictation-description {
@@ -974,6 +983,30 @@ input[type="radio"].visually-hidden {
 
 .complictation-desc-value {
   color: var(--white);
+}
+
+.details {
+  margin-bottom: 20px;
+}
+
+.details-heading {
+  margin-bottom: 4px;
+  padding-left: 30px;
+  color: var(--white);
+  line-height: 25px;
+  text-transform: uppercase;
+  display: block;
+}
+
+.details-list {
+  list-style: disc;
+  padding-left: 30px;
+}
+
+.details-list li {
+  color: var(--white);
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .benefit-banner {
@@ -1267,6 +1300,10 @@ input[type="radio"].visually-hidden {
     padding-bottom: 40px;
   }
 
+  .complictation-img {
+    margin-bottom: 10px;
+  }
+
   .complictation-costs {
     flex-direction: column;
   }
@@ -1294,7 +1331,7 @@ input[type="radio"].visually-hidden {
     margin-top: 30px;
   }
 
-  .complictation {
+  .complictation__top {
     flex-direction: column;
   }
 

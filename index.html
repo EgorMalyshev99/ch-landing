@@ -188,153 +188,486 @@
         </div>
         <div class="complictations-list">
           <div class="complictation">
-            <img class="complictation-img" src="./img/cars/complictations/1.png" alt="1">
-            <div class="complictation-description">
-              <div class="complictation-costs mb-3">
-                <span class="new-cost me-3">от 1 399 900 ₽</span>
-                <span class="credit-cost">в кредит от 13 722 ₽/мес.</span>
+            <div class="complictation__top">
+              <img class="complictation-img" src="./img/cars/complictations/1.png" alt="1">
+              <div class="complictation-description">
+                <div class="complictation-costs mb-3">
+                  <span class="new-cost me-3">от 1 399 900 ₽</span>
+                  <span class="credit-cost">в кредит от 13 722 ₽/мес.</span>
+                </div>
+                <div class="d-none d-md-flex mb-2">
+                  <div class="d-flex flex-column align-items-center me-6">
+                    <span class="complictation-desc-heading">Комплектация</span>
+                    <span class="complictation-desc-value fw-bold">1.6 MT Comfort</span>
+                  </div>
+                  <div class="d-flex flex-column align-items-center me-6">
+                    <span class="complictation-desc-heading">Двигатель</span>
+                    <span class="complictation-desc-value">1.6 - 128 л.с.</span>
+                  </div>
+                  <div class="d-flex flex-column align-items-center me-6">
+                    <span class="complictation-desc-heading">Коробка передач</span>
+                    <span class="complictation-desc-value">АКПП 6</span>
+                  </div>
+                  <div class="d-flex flex-column align-items-center">
+                    <span class="complictation-desc-heading">Привод</span>
+                    <span class="complictation-desc-value">Передний</span>
+                  </div>
+                </div>
+                <div class="d-none d-md-flex">
+                  <div class="d-flex align-items-center me-7">
+                    <span class="speed-icon me-1"></span>
+                    <span class="text-white">164 км/ч</span>
+                  </div>
+                  <div class="d-flex align-items-center me-7">
+                    <span class="engine-icon me-1"></span>
+                    <span class="text-white">128 л.с.</span>
+                  </div>
+                  <div class="d-flex align-items-center me-7">
+                    <span class="time-icon me-1"></span>
+                    <span class="text-white">14 c</span>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <span class="gas-icon me-1"></span>
+                    <span class="text-white">7,2л./100 км</span>
+                  </div>
+                </div>
               </div>
-              <div class="d-none d-md-flex mb-2">
-                <div class="d-flex flex-column align-items-center me-6">
-                  <span class="complictation-desc-heading">Комплектация</span>
-                  <span class="complictation-desc-value fw-bold">1.6 MT Comfort</span>
-                </div>
-                <div class="d-flex flex-column align-items-center me-6">
-                  <span class="complictation-desc-heading">Двигатель</span>
-                  <span class="complictation-desc-value">1.6 - 128 л.с.</span>
-                </div>
-                <div class="d-flex flex-column align-items-center me-6">
-                  <span class="complictation-desc-heading">Коробка передач</span>
-                  <span class="complictation-desc-value">АКПП 6</span>
-                </div>
-                <div class="d-flex flex-column align-items-center">
-                  <span class="complictation-desc-heading">Привод</span>
-                  <span class="complictation-desc-value">Передний</span>
-                </div>
-              </div>
-              <div class="d-none d-md-flex">
-                <div class="d-flex align-items-center me-7">
-                  <span class="speed-icon me-1"></span>
-                  <span class="text-white">164 км/ч</span>
-                </div>
-                <div class="d-flex align-items-center me-7">
-                  <span class="engine-icon me-1"></span>
-                  <span class="text-white">128 л.с.</span>
-                </div>
-                <div class="d-flex align-items-center me-7">
-                  <span class="time-icon me-1"></span>
-                  <span class="text-white">14 c</span>
-                </div>
-                <div class="d-flex align-items-center">
-                  <span class="gas-icon me-1"></span>
-                  <span class="text-white">7,2л./100 км</span>
-                </div>
+              <div>
+                <button class="btn mb-2" type="button" data-bs-toggle="modal" data-bs-target="#creditModal">Рассчитать кредит</button>
+                <button class="btn btn--black mb-4" type="button" data-bs-toggle="modal" data-bs-target="#installmentModal">Рассчитать авторассрочку</button>
+                <button class="btn btn--transparent" type="button" data-bs-toggle="collapse" href="#compl-collapse-1" aria-expanded="false" aria-controls="compl-collapse-1">Полное описание</button>
               </div>
             </div>
-            <div>
-              <button class="btn mb-2" type="button" data-bs-toggle="modal" data-bs-target="#creditModal">Рассчитать кредит</button>
-              <button class="btn btn--black mb-4" type="button" data-bs-toggle="modal" data-bs-target="#installmentModal">Рассчитать авторассрочку</button>
-              <button class="btn btn--transparent" type="button">Полное описание</button>
+            <div class="complictation__bottom collapse" id="compl-collapse-1">
+              <div class="row">
+                <div class="details col-sm-6 col-lg-4">
+                  <span class="details-heading">Безопасность</span>
+                  <ul class="details-list">
+                    <li>Запасное колесо неполноразмерное</li>
+                    <li>Стояночный тормоз: Электронный</li>
+                    <li>Передние тормоза: Дисковые вентилируемые</li>
+                    <li>Задние тормоза: Дисковые</li>
+                    <li>Задние колеса: 215/55 R17</li>
+                    <li>Передние колеса: 215/55 R17</li>
+                    <li>Передний стабилизатор</li>
+                    <li>Передняя подвеска: Независимая, амортизационная стойка типа МакФерсон</li>
+                    <li>Задняя подвеска: Полузависимая, торсионная балка</li>
+                    <li>Иммобилайзер</li>
+                    <li>Вспомогательная система торможения (BAS)</li>
+                    <li>Система контроля усталости водителя</li>
+                    <li>Круиз-контроль</li>
+                    <li>Антиблокировочная система (ABS)</li>
+                    <li>Антипробуксовочная система (TCS)</li>
+                    <li>Адаптивный круиз-контроль (ACCS)</li>
+                    <li>Система распределения тормозного усилия (EBD)</li>
+                    <li>Задний парктроник</li>
+                    <li>Система помощи при старте на подъеме (HAC)</li>
+                    <li>Система электронного контроля устойчивости (ESP)</li>
+                    <li>Функция "Проводи меня домой"</li>
+                    <li>Подушка безопасности водительская</li>
+                    <li>Подушка безопасности переднего пассажира</li>
+                    <li>Подушка безопасности боковая</li>
+                    <li>Трехточечный ремень безопасности</li>
+                    <li>Дополнительный стоп-сигнал</li>
+                    <li>Натяжитель ремней безопасности</li>
+                    <li>ЭРА-ГЛОНАСС</li>
+                    <li>Крепление ISOFIX</li>
+                  </ul>
+                </div>
+                <div class="details col-sm-6 col-lg-4">
+                  <span class="details-heading">Экстерьер</span>
+                  <ul class="details-list">
+                    <li>Габариты кузова (Д x Ш x В), мм: 4335 x 1825 x 1660</li>
+                    <li>Число мест: 5</li>
+                    <li>Количество рядов сидений: 2</li>
+                    <li>Ширина передней колеи, мм: 1570</li>
+                    <li>Колесная база, мм: 2600</li>
+                    <li>Ширина задней колеи, мм: 1570</li>
+                    <li>Объем багажника, л: 403 (950)</li>
+                    <li>Объем топливного бака, л: 52</li>
+                    <li>Масса, кг: 1465</li>
+                    <li>Алюминиевые колесные диски</li>
+                    <li>Размер дисков: 7J х 17</li>
+                    <li>Задние противотуманные фонари</li>
+                    <li>Светодиодные ходовые огни</li>
+                    <li>Передние противотуманные фары</li>
+                    <li>Галогенные фары</li>
+                    <li>Датчик света</li>
+                    <li>Ручки дверей в цвет кузова</li>
+                    <li>Боковые зеркала с повторителями указателей поворота</li>
+                    <li>Электропривод боковых зеркал</li>
+                    <li>Электроподогрев зеркал</li>
+                    <li>Боковые зеркала в цвет кузова</li>
+                    <li>Задний дворник</li>
+                    <li>Рейлинги</li>
+                    <li>Клиренс (высота дорожного просвета), мм: 180</li>
+                    <li>Тип кузова: SUV</li>
+                  </ul>
+                </div>
+                <div class="details col-sm-6 col-lg-4">
+                  <span class="details-heading">Интерьер</span>
+                  <ul class="details-list">
+                    <li>Поддержка MP3</li>
+                    <li>Дополнительное оборудование аудиосистемы: 4 динамика, AUX, USB</li>
+                    <li>Радио</li>
+                    <li>Hands free</li>
+                    <li>Встроенный накопитель памяти</li>
+                    <li>Климат-контроль</li>
+                    <li>Кондиционер</li>
+                    <li>Зеркала в противосолнечных козырьках</li>
+                    <li>Шторка в багажном отделении</li>
+                    <li>Зеркало заднего вида с противоослепляющим эффектом</li>
+                    <li>Бортовой компьютер</li>
+                    <li>Полноцветный ЖК-монитор: 10.25\"</li>
+                    <li>Камера заднего обзора</li>
+                    <li>Обогрев заднего стекла</li>
+                    <li>Кожаная обивка салона</li>
+                    <li>Декоративная отделка: Мягкая обивка панели приборов
+                      с металлическими вставками, отделка строчкой</li>
+                    <li>Разделительный подлокотник сзади</li>
+                    <li>Разделительный подлокотник спереди</li>
+                    <li>Карманы на спинках передних сидений</li>
+                    <li>Регулировка передних сидений: Регулировка сидения водителя
+                      в 6 направлениях, пассажира - 4 направлениях</li>
+                    <li>Второй ряд сидений: складывается в соотношении 60/40</li>
+                    <li>Управление аудиосистемой на руле</li>
+                    <li>Кнопка запуска двигателя</li>
+                    <li>Телескопическая регулировка руля</li>
+                    <li>Кожаная оплетка рулевого колеса</li>
+                    <li>Регулируемая рулевая колонка</li>
+                    <li>Вертикальная регулировка руля</li>
+                    <li>Электрические стеклоподъемники задние</li>
+                    <li>Электроподогрев передних сидений</li>
+                    <li>Бесключевой доступ</li>
+                    <li>Ключ ДУ (дистанционный ключ)</li>
+                    <li>Центральный замок</li>
+                    <li>Электрические стеклоподъемники передние</li>
+                    <li>Электропривод водительского сиденья</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
           <div class="complictation">
-            <img class="complictation-img" src="./img/cars/complictations/1.png" alt="1">
-            <div class="complictation-description">
-              <div class="complictation-costs mb-3">
-                <span class="new-cost me-3">от 1 399 900 ₽</span>
-                <span class="credit-cost">в кредит от 13 722 ₽/мес.</span>
+            <div class="complictation__top">
+              <img class="complictation-img" src="./img/cars/complictations/1.png" alt="1">
+              <div class="complictation-description">
+                <div class="complictation-costs mb-3">
+                  <span class="new-cost me-3">от 1 399 900 ₽</span>
+                  <span class="credit-cost">в кредит от 13 722 ₽/мес.</span>
+                </div>
+                <div class="d-none d-md-flex mb-2">
+                  <div class="d-flex flex-column align-items-center me-6">
+                    <span class="complictation-desc-heading">Комплектация</span>
+                    <span class="complictation-desc-value fw-bold">1.6 MT Comfort</span>
+                  </div>
+                  <div class="d-flex flex-column align-items-center me-6">
+                    <span class="complictation-desc-heading">Двигатель</span>
+                    <span class="complictation-desc-value">1.6 - 128 л.с.</span>
+                  </div>
+                  <div class="d-flex flex-column align-items-center me-6">
+                    <span class="complictation-desc-heading">Коробка передач</span>
+                    <span class="complictation-desc-value">АКПП 6</span>
+                  </div>
+                  <div class="d-flex flex-column align-items-center">
+                    <span class="complictation-desc-heading">Привод</span>
+                    <span class="complictation-desc-value">Передний</span>
+                  </div>
+                </div>
+                <div class="d-none d-md-flex">
+                  <div class="d-flex align-items-center me-7">
+                    <span class="speed-icon me-1"></span>
+                    <span class="text-white">164 км/ч</span>
+                  </div>
+                  <div class="d-flex align-items-center me-7">
+                    <span class="engine-icon me-1"></span>
+                    <span class="text-white">128 л.с.</span>
+                  </div>
+                  <div class="d-flex align-items-center me-7">
+                    <span class="time-icon me-1"></span>
+                    <span class="text-white">14 c</span>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <span class="gas-icon me-1"></span>
+                    <span class="text-white">7,2л./100 км</span>
+                  </div>
+                </div>
               </div>
-              <div class="d-none d-md-flex mb-2">
-                <div class="d-flex flex-column align-items-center me-6">
-                  <span class="complictation-desc-heading">Комплектация</span>
-                  <span class="complictation-desc-value fw-bold">1.6 MT Comfort</span>
-                </div>
-                <div class="d-flex flex-column align-items-center me-6">
-                  <span class="complictation-desc-heading">Двигатель</span>
-                  <span class="complictation-desc-value">1.6 - 128 л.с.</span>
-                </div>
-                <div class="d-flex flex-column align-items-center me-6">
-                  <span class="complictation-desc-heading">Коробка передач</span>
-                  <span class="complictation-desc-value">АКПП 6</span>
-                </div>
-                <div class="d-flex flex-column align-items-center">
-                  <span class="complictation-desc-heading">Привод</span>
-                  <span class="complictation-desc-value">Передний</span>
-                </div>
-              </div>
-              <div class="d-none d-md-flex">
-                <div class="d-flex align-items-center me-7">
-                  <span class="speed-icon me-1"></span>
-                  <span class="text-white">164 км/ч</span>
-                </div>
-                <div class="d-flex align-items-center me-7">
-                  <span class="engine-icon me-1"></span>
-                  <span class="text-white">128 л.с.</span>
-                </div>
-                <div class="d-flex align-items-center me-7">
-                  <span class="time-icon me-1"></span>
-                  <span class="text-white">14 c</span>
-                </div>
-                <div class="d-flex align-items-center">
-                  <span class="gas-icon me-1"></span>
-                  <span class="text-white">7,2л./100 км</span>
-                </div>
+              <div>
+                <button class="btn mb-2" type="button" data-bs-toggle="modal" data-bs-target="#creditModal">Рассчитать кредит</button>
+                <button class="btn btn--black mb-4" type="button" data-bs-toggle="modal" data-bs-target="#installmentModal">Рассчитать авторассрочку</button>
+                <button class="btn btn--transparent" type="button" data-bs-toggle="collapse" href="#compl-collapse-2" aria-expanded="false" aria-controls="compl-collapse-2">Полное описание</button>
               </div>
             </div>
-            <div>
-              <button class="btn mb-2" type="button" data-bs-toggle="modal" data-bs-target="#creditModal">Рассчитать кредит</button>
-              <button class="btn btn--black mb-4" type="button" data-bs-toggle="modal" data-bs-target="#installmentModal">Рассчитать авторассрочку</button>
-              <button class="btn btn--transparent" type="button">Полное описание</button>
+            <div class="complictation__bottom collapse" id="compl-collapse-2">
+              <div class="row">
+                <div class="details col-sm-6 col-lg-4">
+                  <span class="details-heading">Безопасность</span>
+                  <ul class="details-list">
+                    <li>Запасное колесо неполноразмерное</li>
+                    <li>Стояночный тормоз: Электронный</li>
+                    <li>Передние тормоза: Дисковые вентилируемые</li>
+                    <li>Задние тормоза: Дисковые</li>
+                    <li>Задние колеса: 215/55 R17</li>
+                    <li>Передние колеса: 215/55 R17</li>
+                    <li>Передний стабилизатор</li>
+                    <li>Передняя подвеска: Независимая, амортизационная стойка типа МакФерсон</li>
+                    <li>Задняя подвеска: Полузависимая, торсионная балка</li>
+                    <li>Иммобилайзер</li>
+                    <li>Вспомогательная система торможения (BAS)</li>
+                    <li>Система контроля усталости водителя</li>
+                    <li>Круиз-контроль</li>
+                    <li>Антиблокировочная система (ABS)</li>
+                    <li>Антипробуксовочная система (TCS)</li>
+                    <li>Адаптивный круиз-контроль (ACCS)</li>
+                    <li>Система распределения тормозного усилия (EBD)</li>
+                    <li>Задний парктроник</li>
+                    <li>Система помощи при старте на подъеме (HAC)</li>
+                    <li>Система электронного контроля устойчивости (ESP)</li>
+                    <li>Функция "Проводи меня домой"</li>
+                    <li>Подушка безопасности водительская</li>
+                    <li>Подушка безопасности переднего пассажира</li>
+                    <li>Подушка безопасности боковая</li>
+                    <li>Трехточечный ремень безопасности</li>
+                    <li>Дополнительный стоп-сигнал</li>
+                    <li>Натяжитель ремней безопасности</li>
+                    <li>ЭРА-ГЛОНАСС</li>
+                    <li>Крепление ISOFIX</li>
+                  </ul>
+                </div>
+                <div class="details col-sm-6 col-lg-4">
+                  <span class="details-heading">Экстерьер</span>
+                  <ul class="details-list">
+                    <li>Габариты кузова (Д x Ш x В), мм: 4335 x 1825 x 1660</li>
+                    <li>Число мест: 5</li>
+                    <li>Количество рядов сидений: 2</li>
+                    <li>Ширина передней колеи, мм: 1570</li>
+                    <li>Колесная база, мм: 2600</li>
+                    <li>Ширина задней колеи, мм: 1570</li>
+                    <li>Объем багажника, л: 403 (950)</li>
+                    <li>Объем топливного бака, л: 52</li>
+                    <li>Масса, кг: 1465</li>
+                    <li>Алюминиевые колесные диски</li>
+                    <li>Размер дисков: 7J х 17</li>
+                    <li>Задние противотуманные фонари</li>
+                    <li>Светодиодные ходовые огни</li>
+                    <li>Передние противотуманные фары</li>
+                    <li>Галогенные фары</li>
+                    <li>Датчик света</li>
+                    <li>Ручки дверей в цвет кузова</li>
+                    <li>Боковые зеркала с повторителями указателей поворота</li>
+                    <li>Электропривод боковых зеркал</li>
+                    <li>Электроподогрев зеркал</li>
+                    <li>Боковые зеркала в цвет кузова</li>
+                    <li>Задний дворник</li>
+                    <li>Рейлинги</li>
+                    <li>Клиренс (высота дорожного просвета), мм: 180</li>
+                    <li>Тип кузова: SUV</li>
+                  </ul>
+                </div>
+                <div class="details col-sm-6 col-lg-4">
+                  <span class="details-heading">Интерьер</span>
+                  <ul class="details-list">
+                    <li>Поддержка MP3</li>
+                    <li>Дополнительное оборудование аудиосистемы: 4 динамика, AUX, USB</li>
+                    <li>Радио</li>
+                    <li>Hands free</li>
+                    <li>Встроенный накопитель памяти</li>
+                    <li>Климат-контроль</li>
+                    <li>Кондиционер</li>
+                    <li>Зеркала в противосолнечных козырьках</li>
+                    <li>Шторка в багажном отделении</li>
+                    <li>Зеркало заднего вида с противоослепляющим эффектом</li>
+                    <li>Бортовой компьютер</li>
+                    <li>Полноцветный ЖК-монитор: 10.25\"</li>
+                    <li>Камера заднего обзора</li>
+                    <li>Обогрев заднего стекла</li>
+                    <li>Кожаная обивка салона</li>
+                    <li>Декоративная отделка: Мягкая обивка панели приборов
+                      с металлическими вставками, отделка строчкой</li>
+                    <li>Разделительный подлокотник сзади</li>
+                    <li>Разделительный подлокотник спереди</li>
+                    <li>Карманы на спинках передних сидений</li>
+                    <li>Регулировка передних сидений: Регулировка сидения водителя
+                      в 6 направлениях, пассажира - 4 направлениях</li>
+                    <li>Второй ряд сидений: складывается в соотношении 60/40</li>
+                    <li>Управление аудиосистемой на руле</li>
+                    <li>Кнопка запуска двигателя</li>
+                    <li>Телескопическая регулировка руля</li>
+                    <li>Кожаная оплетка рулевого колеса</li>
+                    <li>Регулируемая рулевая колонка</li>
+                    <li>Вертикальная регулировка руля</li>
+                    <li>Электрические стеклоподъемники задние</li>
+                    <li>Электроподогрев передних сидений</li>
+                    <li>Бесключевой доступ</li>
+                    <li>Ключ ДУ (дистанционный ключ)</li>
+                    <li>Центральный замок</li>
+                    <li>Электрические стеклоподъемники передние</li>
+                    <li>Электропривод водительского сиденья</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
           <div class="complictation">
-            <img class="complictation-img" src="./img/cars/complictations/1.png" alt="1">
-            <div class="complictation-description">
-              <div class="complictation-costs mb-3">
-                <span class="new-cost me-3">от 1 399 900 ₽</span>
-                <span class="credit-cost">в кредит от 13 722 ₽/мес.</span>
+            <div class="complictation__top">
+              <img class="complictation-img" src="./img/cars/complictations/1.png" alt="1">
+              <div class="complictation-description">
+                <div class="complictation-costs mb-3">
+                  <span class="new-cost me-3">от 1 399 900 ₽</span>
+                  <span class="credit-cost">в кредит от 13 722 ₽/мес.</span>
+                </div>
+                <div class="d-none d-md-flex mb-2">
+                  <div class="d-flex flex-column align-items-center me-6">
+                    <span class="complictation-desc-heading">Комплектация</span>
+                    <span class="complictation-desc-value fw-bold">1.6 MT Comfort</span>
+                  </div>
+                  <div class="d-flex flex-column align-items-center me-6">
+                    <span class="complictation-desc-heading">Двигатель</span>
+                    <span class="complictation-desc-value">1.6 - 128 л.с.</span>
+                  </div>
+                  <div class="d-flex flex-column align-items-center me-6">
+                    <span class="complictation-desc-heading">Коробка передач</span>
+                    <span class="complictation-desc-value">АКПП 6</span>
+                  </div>
+                  <div class="d-flex flex-column align-items-center">
+                    <span class="complictation-desc-heading">Привод</span>
+                    <span class="complictation-desc-value">Передний</span>
+                  </div>
+                </div>
+                <div class="d-none d-md-flex">
+                  <div class="d-flex align-items-center me-7">
+                    <span class="speed-icon me-1"></span>
+                    <span class="text-white">164 км/ч</span>
+                  </div>
+                  <div class="d-flex align-items-center me-7">
+                    <span class="engine-icon me-1"></span>
+                    <span class="text-white">128 л.с.</span>
+                  </div>
+                  <div class="d-flex align-items-center me-7">
+                    <span class="time-icon me-1"></span>
+                    <span class="text-white">14 c</span>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <span class="gas-icon me-1"></span>
+                    <span class="text-white">7,2л./100 км</span>
+                  </div>
+                </div>
               </div>
-              <div class="d-none d-md-flex mb-2">
-                <div class="d-flex flex-column align-items-center me-6">
-                  <span class="complictation-desc-heading">Комплектация</span>
-                  <span class="complictation-desc-value fw-bold">1.6 MT Comfort</span>
-                </div>
-                <div class="d-flex flex-column align-items-center me-6">
-                  <span class="complictation-desc-heading">Двигатель</span>
-                  <span class="complictation-desc-value">1.6 - 128 л.с.</span>
-                </div>
-                <div class="d-flex flex-column align-items-center me-6">
-                  <span class="complictation-desc-heading">Коробка передач</span>
-                  <span class="complictation-desc-value">АКПП 6</span>
-                </div>
-                <div class="d-flex flex-column align-items-center">
-                  <span class="complictation-desc-heading">Привод</span>
-                  <span class="complictation-desc-value">Передний</span>
-                </div>
-              </div>
-              <div class="d-none d-md-flex">
-                <div class="d-flex align-items-center me-7">
-                  <span class="speed-icon me-1"></span>
-                  <span class="text-white">164 км/ч</span>
-                </div>
-                <div class="d-flex align-items-center me-7">
-                  <span class="engine-icon me-1"></span>
-                  <span class="text-white">128 л.с.</span>
-                </div>
-                <div class="d-flex align-items-center me-7">
-                  <span class="time-icon me-1"></span>
-                  <span class="text-white">14 c</span>
-                </div>
-                <div class="d-flex align-items-center">
-                  <span class="gas-icon me-1"></span>
-                  <span class="text-white">7,2л./100 км</span>
-                </div>
+              <div>
+                <button class="btn mb-2" type="button" data-bs-toggle="modal" data-bs-target="#creditModal">Рассчитать кредит</button>
+                <button class="btn btn--black mb-4" type="button" data-bs-toggle="modal" data-bs-target="#installmentModal">Рассчитать авторассрочку</button>
+                <button class="btn btn--transparent" type="button" data-bs-toggle="collapse" href="#compl-collapse-3" aria-expanded="false" aria-controls="compl-collapse-3">Полное описание</button>
               </div>
             </div>
-            <div>
-              <button class="btn mb-2" type="button" data-bs-toggle="modal" data-bs-target="#creditModal">Рассчитать кредит</button>
-              <button class="btn btn--black mb-4" type="button" data-bs-toggle="modal" data-bs-target="#installmentModal">Рассчитать авторассрочку</button>
-              <button class="btn btn--transparent" type="button">Полное описание</button>
+            <div class="complictation__bottom collapse" id="compl-collapse-3">
+              <div class="row">
+                <div class="details col-sm-6 col-lg-4">
+                  <span class="details-heading">Безопасность</span>
+                  <ul class="details-list">
+                    <li>Запасное колесо неполноразмерное</li>
+                    <li>Стояночный тормоз: Электронный</li>
+                    <li>Передние тормоза: Дисковые вентилируемые</li>
+                    <li>Задние тормоза: Дисковые</li>
+                    <li>Задние колеса: 215/55 R17</li>
+                    <li>Передние колеса: 215/55 R17</li>
+                    <li>Передний стабилизатор</li>
+                    <li>Передняя подвеска: Независимая, амортизационная стойка типа МакФерсон</li>
+                    <li>Задняя подвеска: Полузависимая, торсионная балка</li>
+                    <li>Иммобилайзер</li>
+                    <li>Вспомогательная система торможения (BAS)</li>
+                    <li>Система контроля усталости водителя</li>
+                    <li>Круиз-контроль</li>
+                    <li>Антиблокировочная система (ABS)</li>
+                    <li>Антипробуксовочная система (TCS)</li>
+                    <li>Адаптивный круиз-контроль (ACCS)</li>
+                    <li>Система распределения тормозного усилия (EBD)</li>
+                    <li>Задний парктроник</li>
+                    <li>Система помощи при старте на подъеме (HAC)</li>
+                    <li>Система электронного контроля устойчивости (ESP)</li>
+                    <li>Функция "Проводи меня домой"</li>
+                    <li>Подушка безопасности водительская</li>
+                    <li>Подушка безопасности переднего пассажира</li>
+                    <li>Подушка безопасности боковая</li>
+                    <li>Трехточечный ремень безопасности</li>
+                    <li>Дополнительный стоп-сигнал</li>
+                    <li>Натяжитель ремней безопасности</li>
+                    <li>ЭРА-ГЛОНАСС</li>
+                    <li>Крепление ISOFIX</li>
+                  </ul>
+                </div>
+                <div class="details col-sm-6 col-lg-4">
+                  <span class="details-heading">Экстерьер</span>
+                  <ul class="details-list">
+                    <li>Габариты кузова (Д x Ш x В), мм: 4335 x 1825 x 1660</li>
+                    <li>Число мест: 5</li>
+                    <li>Количество рядов сидений: 2</li>
+                    <li>Ширина передней колеи, мм: 1570</li>
+                    <li>Колесная база, мм: 2600</li>
+                    <li>Ширина задней колеи, мм: 1570</li>
+                    <li>Объем багажника, л: 403 (950)</li>
+                    <li>Объем топливного бака, л: 52</li>
+                    <li>Масса, кг: 1465</li>
+                    <li>Алюминиевые колесные диски</li>
+                    <li>Размер дисков: 7J х 17</li>
+                    <li>Задние противотуманные фонари</li>
+                    <li>Светодиодные ходовые огни</li>
+                    <li>Передние противотуманные фары</li>
+                    <li>Галогенные фары</li>
+                    <li>Датчик света</li>
+                    <li>Ручки дверей в цвет кузова</li>
+                    <li>Боковые зеркала с повторителями указателей поворота</li>
+                    <li>Электропривод боковых зеркал</li>
+                    <li>Электроподогрев зеркал</li>
+                    <li>Боковые зеркала в цвет кузова</li>
+                    <li>Задний дворник</li>
+                    <li>Рейлинги</li>
+                    <li>Клиренс (высота дорожного просвета), мм: 180</li>
+                    <li>Тип кузова: SUV</li>
+                  </ul>
+                </div>
+                <div class="details col-sm-6 col-lg-4">
+                  <span class="details-heading">Интерьер</span>
+                  <ul class="details-list">
+                    <li>Поддержка MP3</li>
+                    <li>Дополнительное оборудование аудиосистемы: 4 динамика, AUX, USB</li>
+                    <li>Радио</li>
+                    <li>Hands free</li>
+                    <li>Встроенный накопитель памяти</li>
+                    <li>Климат-контроль</li>
+                    <li>Кондиционер</li>
+                    <li>Зеркала в противосолнечных козырьках</li>
+                    <li>Шторка в багажном отделении</li>
+                    <li>Зеркало заднего вида с противоослепляющим эффектом</li>
+                    <li>Бортовой компьютер</li>
+                    <li>Полноцветный ЖК-монитор: 10.25\"</li>
+                    <li>Камера заднего обзора</li>
+                    <li>Обогрев заднего стекла</li>
+                    <li>Кожаная обивка салона</li>
+                    <li>Декоративная отделка: Мягкая обивка панели приборов
+                      с металлическими вставками, отделка строчкой</li>
+                    <li>Разделительный подлокотник сзади</li>
+                    <li>Разделительный подлокотник спереди</li>
+                    <li>Карманы на спинках передних сидений</li>
+                    <li>Регулировка передних сидений: Регулировка сидения водителя
+                      в 6 направлениях, пассажира - 4 направлениях</li>
+                    <li>Второй ряд сидений: складывается в соотношении 60/40</li>
+                    <li>Управление аудиосистемой на руле</li>
+                    <li>Кнопка запуска двигателя</li>
+                    <li>Телескопическая регулировка руля</li>
+                    <li>Кожаная оплетка рулевого колеса</li>
+                    <li>Регулируемая рулевая колонка</li>
+                    <li>Вертикальная регулировка руля</li>
+                    <li>Электрические стеклоподъемники задние</li>
+                    <li>Электроподогрев передних сидений</li>
+                    <li>Бесключевой доступ</li>
+                    <li>Ключ ДУ (дистанционный ключ)</li>
+                    <li>Центральный замок</li>
+                    <li>Электрические стеклоподъемники передние</li>
+                    <li>Электропривод водительского сиденья</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
